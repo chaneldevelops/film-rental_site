@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main color palette */
+:root {
+/* Main color palette */
+    --primary-color: #fff;
+    --secondary-color: #2E2E2E;
+    --detail-color: #BB3300;
+
+}
+
+/* whole nav section */
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* centers items vertically */
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo img {
+    width: 40%;
+    height: auto;
+}
+
+/* Nav button styling */
+.nav-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-right: 3rem;
+}
+
+.nav-btns li {
+    list-style: none;
+}
+
+.nav-btns li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+/* burger menu */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 2rem;
+    height: 0.25rem;
+    margin: 0.4rem;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease;
+    
+}
+
+/* hovers */
+.nav-btns li a:hover {
+    color: var(--detail-color);
+}
+
+/* Dropdown menu */
+
+.dropdown-menu {
+    display: none; /* Hide dropdown menu by default */
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin-top: 1rem; /* Adds spacing between the nav links and dropdown menu */
+}
+
+.dropdown-menu ul li {
+    text-align: center;
+}
+
+.dropdown-menu ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    padding: 0.5rem;
+}
+
+
+/* Responsive nav */
+@media (max-width: 786px) {
+    .logo {
+        width: 50%;
+    }
+    .nav-btns {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
+}
+
+
+
+/* Header section */
