@@ -22,9 +22,6 @@ Getting Started
 
 To get started with the project, you can simply download the code or clone the repository to your local machine. Once you have the files, you can open the index.html file in your web browser to view the website.
 
-Contributing
-
-If you would like to contribute to the project, feel free to fork the repository and make changes as you see fit. You can then submit a pull request to have your changes reviewed and merged into the main branch.
 
 License
 
