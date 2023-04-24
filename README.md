@@ -25,7 +25,7 @@ To get started with the project, you can simply download the code or clone the r
 
 License
 
-The project is licensed under the MIT License. You can view the license file here.
+The project is licensed under the MIT License. 
 
 Acknowledgments
 
