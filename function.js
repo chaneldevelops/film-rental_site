@@ -23,3 +23,20 @@ filterButtons.forEach(button => {
     });
   });
 });
+
+// burger menu functionality
+const burger = document.querySelector('.burger');
+const navBtns = document.querySelector('.nav-btns');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+const line1 = document.querySelector('.line1');
+const line2 = document.querySelector('.line2');
+const line3 = document.querySelector('.line3');
+
+burger.addEventListener('click', () => {
+  navBtns.classList.toggle('show');
+  dropdownMenu.classList.toggle('show');
+  line1.classList.toggle('line1-active');
+  line2.classList.toggle('line2-active');
+  line3.classList.toggle('line3-active');
+});
+

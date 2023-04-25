@@ -81,7 +81,6 @@ nav {
     margin: 0.4rem;
     background-color: var(--secondary-color);
     transition: all 0.3s ease;
-    
 }
 
 /* hovers */
@@ -102,10 +101,14 @@ nav {
 
 .dropdown-menu ul li {
     text-align: center;
+    margin-left: -3rem;
 }
 
 .dropdown-menu ul li a {
     color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-weight: 500;
+    line-height: 1rem;
     text-decoration: none;
     font-size: 1.5rem;
     display: block;
@@ -115,6 +118,7 @@ nav {
 
 /* Responsive nav */
 @media (max-width: 786px) {
+    /* nav section */
     .logo {
         width: 50%;
     }
@@ -126,11 +130,17 @@ nav {
         display: block;
         cursor: pointer;
     }
+    
 
     .dropdown-menu.show {
         display: block;
     }
 
+    /* contact section */
+    .contact-details, .contact-form {
+        margin: 0 auto;
+        text-align: center;
+      }
 }
 
 
@@ -212,7 +222,7 @@ header button a:hover {
 #equipment h2{
     text-align: center;
     margin-bottom: 3rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 /* this is the container */
@@ -324,10 +334,12 @@ header button a:hover {
     background-color: #d43a02;
     bottom: -8px;
     left: 0;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: center center;
   }
 
   #packages h2:hover:after {
-    transform: scale(1.1);
+    transform: scaleY(1.5); /* adding the Y makes a whole difference */
   }
   
 
@@ -447,7 +459,7 @@ header button a:hover {
   
   /* Style the image of the team */
   .about-container img[src="assets/the-crew/film-crew.jpg"] {
-    width: 100%;
+    width: 80%;
     max-width: 50rem;
     border-radius: 0.25rem;
     box-shadow: 0rem 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
@@ -465,15 +477,43 @@ header button a:hover {
 #contact {
     background-color: var(--secondary-color);
     padding: 80px 0rem;
+    
   }
 
-  #contact h2 {
+  .contact-title {
+    display: flex;
+    justify-content: center;
     font-size: var(--heading-fontsize);
     margin-bottom: 3rem;
     color: var(--primary-color);
-    text-align: center;
+    /* margin-left: 10rem; */
 
   }
+
+  .contact-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-title:after {
+    content: '';
+    position: absolute;
+    width: 25%;
+    text-align: center;
+    height: 0.4rem;
+    background-color: #d43a02;
+    bottom: -8px;
+    left: 2;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: center center;
+  }
+  
+  .contact-title:hover:after {
+    transform: scaleY(1.5);
+  }
+  
+
   
   
   /* Contact container */
@@ -495,17 +535,18 @@ header button a:hover {
     display: flex; /* Add flex display */
     flex-wrap: wrap; /* Wrap the child elements when the container is too small */
     justify-content: center; /* places items below the heading in the center */
+    gap: 5rem;
   }
   
   /* Contact details column */
   .contact-details {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     margin-right: 5rem;
     text-align: center; /* Center the text horizontally */
     font-size: 1.25rem;
-    margin-bottom: 3rem;
+    margin-left: 5.5rem; /* helps center it individually */
     
   }
 
@@ -533,8 +574,11 @@ header button a:hover {
   /* Contact form column */
   .contact-form {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 25rem;
-    margin-left: 10rem;
+    margin-left: 2rem;
 
   }
 
