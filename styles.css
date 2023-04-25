@@ -10,6 +10,7 @@
     --primary-color: #fff;
     --secondary-color: #2E2E2E;
     --detail-color: #BB3300;
+    --heading-fontsize: 2rem;
 
 }
 
@@ -174,4 +175,92 @@ header button:hover {
 
 header button a:hover {
     color: var(--primary-color);
+}
+
+
+/* EQUIPMENT SECTION */
+#equipment {
+    background-color: var(--primary-color);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#equipment h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: var(--heading-fontsize);
+}
+
+/* this is the container */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3.125rem;
+    list-style-type: none;
+}
+
+/* individual buttons */
+.filter-button {
+    display: inline-block;
+    padding: 0.75rem 1.875rem;
+    border-radius: 0.5rem;
+    margin: 0.625rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 0.125rem solid var(--detail-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.filter-button:hover,.filter-button.active  {
+    background-color: var(--detail-color);
+    color: var(--primary-color);
+    border: 0.125rem solid var(--secondary-color);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.col-6, .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 25%
+}
+
+.col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+#equipment img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1.25rem;
+}
+
+.equipment-info {
+    text-align: center;
+}
+
+.equipment-title {
+    font: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.625rem;
+}
+
+.equipment-text {
+    font-size: 1rem;
 }
