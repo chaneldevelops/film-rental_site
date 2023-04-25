@@ -508,7 +508,7 @@ header button a:hover {
   .contact-title:after {
     content: '';
     position: absolute;
-    width: 200px;
+    width: 200px; /* changing this to pixels stopped it from sliding around */
     text-align: center;
     height: 0.4rem;
     background-color: #d43a02;
