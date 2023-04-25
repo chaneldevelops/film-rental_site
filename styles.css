@@ -1,3 +1,8 @@
+/* Headering font */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@400;500;600;700&display=swap');
+/* Subheading font */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,11 +17,19 @@
     --detail-color: #BB3300;
     --heading-fontsize: 2.5rem;
     --heading-bottom: 2.5rem;
+    --heading-font: Hind Guntur, sans-serif;
+    --subhead-font: PT Sans Caption, sans-serif;
 
 }
 
 /* FONT SIZES */
+h1, h2, h4 {
+    font-family: var(--heading-font);
+}
 
+p {
+    font-family: var(--subhead-font)
+}
 
 /* whole nav section */
 nav {
@@ -46,6 +59,8 @@ nav {
 
 .nav-btns li {
     list-style: none;
+    font-family: var(--heading-font);
+    font-weight: 600;
 }
 
 .nav-btns li a {
@@ -115,7 +130,9 @@ nav {
     .dropdown-menu.show {
         display: block;
     }
+
 }
+
 
 
 
@@ -163,11 +180,14 @@ header button {
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.3s ease; /* smooth transition effect */
+    
 }
 
 header button a {
     color: var(--secondary-color);
     text-decoration: none;
+    font-family: var(--heading-font);
+    font-weight: 500;
 }
 
 /* hover effects */
@@ -203,6 +223,7 @@ header button a:hover {
     flex-wrap: wrap;
     margin-bottom: 3.125rem;
     list-style-type: none;
+    font-family: var(--subhead-font);
 }
 
 /* individual buttons */
@@ -366,6 +387,7 @@ header button a:hover {
   
   .package-row li {
     margin-bottom: 10px;
+    font-family: var(--subhead-font);
   }
   
   
@@ -379,6 +401,7 @@ header button a:hover {
     padding: 0.625rem 1.25rem;
     font-size: 1.6rem;
     cursor: pointer;
+    font-family: var(--subhead-font);
   }
   
   .contact-btn:hover {
@@ -451,22 +474,6 @@ header button a:hover {
     text-align: center;
 
   }
-
-  /* contact underline h2 */
-  /* #contact > h2 {
-    font-size: 32px;
-    text-align: center;
-  }
-  
-  #contact > h2:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--detail-color);
-  } */
   
   
   /* Contact container */
@@ -498,6 +505,7 @@ header button a:hover {
     margin-right: 5rem;
     text-align: center; /* Center the text horizontally */
     font-size: 1.25rem;
+    margin-bottom: 3rem;
     
   }
 
@@ -525,10 +533,11 @@ header button a:hover {
   /* Contact form column */
   .contact-form {
     display: flex;
-    width: 15rem;
+    width: 25rem;
     margin-left: 10rem;
 
   }
+
   
   /* Contact form input fields */
   .contact-form input,
@@ -550,6 +559,8 @@ header button a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
+    font-family: var(--subhead-font);
   }
 
   /* hover contact button */ 
