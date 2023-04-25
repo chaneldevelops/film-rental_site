@@ -117,7 +117,7 @@ nav {
 
 
 /* Responsive nav */
-@media (max-width: 786px) {
+@media (min-width: 200px ) and (max-width: 786px) {
     /* nav section */
     .logo {
         width: 50%;
@@ -136,10 +136,16 @@ nav {
         display: block;
     }
 
+
+
     /* contact section */
     .contact-details, .contact-form {
         margin: 0 auto;
         text-align: center;
+      }
+
+      .contact-title:after {
+        width: 25%;
       }
 }
 
@@ -175,6 +181,7 @@ header img {
 .header-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem; /* add some spacing between the paragraph text */
+    line-height: 3.5rem;
 }
 
 .header-content p {
@@ -346,6 +353,7 @@ header button a:hover {
   /* packages p*/
   #packages p {
     font-size: 1.25rem;
+    margin-bottom: 2rem;
   }
 
   .packages-container {
@@ -356,7 +364,7 @@ header button a:hover {
   
   .packages-container h2 {
     font-size: 36px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
   }
   
   /* Packages group */
@@ -484,12 +492,13 @@ header button a:hover {
     display: flex;
     justify-content: center;
     font-size: var(--heading-fontsize);
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     color: var(--primary-color);
     /* margin-left: 10rem; */
 
   }
 
+  /* hover underline effect */
   .contact-title {
     position: relative;
     display: flex;
@@ -499,7 +508,7 @@ header button a:hover {
   .contact-title:after {
     content: '';
     position: absolute;
-    width: 25%;
+    width: 200px;
     text-align: center;
     height: 0.4rem;
     background-color: #d43a02;
