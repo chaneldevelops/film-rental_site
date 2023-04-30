@@ -423,6 +423,11 @@ header button a:hover {
     cursor: pointer;
     font-family: var(--subhead-font);
   }
+
+  .contact-btn a {
+    color: #fff;
+    text-decoration: none;
+  }
   
   .contact-btn:hover {
     background-color: #e65a00;
