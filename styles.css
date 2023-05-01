@@ -130,7 +130,7 @@ nav {
 
 
 /* Responsive nav */
-@media (min-width: 200px ) and (max-width: 786px) {
+@media screen and (max-width: 767px) {
     /* nav section */
     .logo {
         width: 50%;
@@ -149,7 +149,15 @@ nav {
         display: block;
     }
 
-
+/* the packages */
+      .package-group {
+        flex-direction: row;
+        justify-content: center;
+      }
+      .package-row {
+        flex-basis: 100% !important; /* this forces the stacked layout but keep
+        in mind when adding anything to this section for the future  */
+      }
 
     /* contact section */
     .contact-details, .contact-form {
@@ -157,9 +165,12 @@ nav {
         text-align: center;
       }
 
+
       .contact-title:after {
         width: 25%;
       }
+
+      
 }
 
 
@@ -397,6 +408,7 @@ header button:hover {
     border-radius: 4px;
     overflow: hidden;
     transition: transform 0.2s ease-in-out;
+    cursor: pointer;
   }
   
   .package-row:hover {
