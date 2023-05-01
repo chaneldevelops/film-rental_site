@@ -28,17 +28,23 @@ filterButtons.forEach(button => {
 const burger = document.querySelector('.burger');
 const navBtns = document.querySelector('.nav-btns');
 const dropdownMenu = document.querySelector('.dropdown-menu');
-const line1 = document.querySelector('.line1');
-const line2 = document.querySelector('.line2');
-const line3 = document.querySelector('.line3');
+const navLinks = document.querySelectorAll('.dropdown-menu ul li a'); // collection of the links in the menu
 
+
+// Toggle drop down menu
 burger.addEventListener('click', () => {
   navBtns.classList.toggle('show');
   dropdownMenu.classList.toggle('show');
-  line1.classList.toggle('line1-active');
-  line2.classList.toggle('line2-active');
-  line3.classList.toggle('line3-active');
 });
+
+// Hide menu when selection is clicked
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navBtns.classList.remove('show');
+    dropdownMenu.classList.remove('show');
+  });
+});
+
 
 
 // THE SCROLL UP BUTTON //

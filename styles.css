@@ -75,12 +75,9 @@ nav {
     cursor: pointer;
 }
 
-.burger div {
-    width: 2rem;
-    height: 0.25rem;
-    margin: 0.4rem;
-    background-color: var(--secondary-color);
-    transition: all 0.3s ease;
+.burger i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
 /* hovers */
@@ -92,16 +89,30 @@ nav {
 
 .dropdown-menu {
     display: none; /* Hide dropdown menu by default */
+    position: absolute; /* this made it so I was able to align the nav links below the burger icon */
+    top: 3rem;
+    padding-top: 1rem;
+    left: 0; /* this fills the gap that was on the left */
+    width: 100%; /* covers the width of the nav section */
+    z-index: 999;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
 .dropdown-menu ul {
     list-style: none;
     margin-top: 1rem; /* Adds spacing between the nav links and dropdown menu */
+    padding: 0;
 }
 
 .dropdown-menu ul li {
-    text-align: center;
-    margin-left: -3rem;
+    margin-bottom: 1rem;
+}
+
+.dropdown-menu ul li a {
+  display: block;
+  padding: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .dropdown-menu ul li a {
@@ -110,10 +121,12 @@ nav {
     font-weight: 500;
     line-height: 1rem;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: block;
     padding: 0.5rem;
+    text-align: center;
 }
+
 
 
 /* Responsive nav */
@@ -192,7 +205,6 @@ header img {
 header button {
     background-color: var(--primary-color);
     padding: 1rem 2rem;
-    /* border: solid 1rem var(--detail-color); */
     border-radius: 1rem;
     font-size: 1.2rem;
     cursor: pointer;
