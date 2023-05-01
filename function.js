@@ -40,3 +40,20 @@ burger.addEventListener('click', () => {
   line3.classList.toggle('line3-active');
 });
 
+
+// THE SCROLL UP BUTTON //
+
+// Get a reference to the scroll-up button element
+const scrollUpButton = document.querySelector('.scroll-up');
+
+// Add a scroll event listener to the window object
+window.addEventListener('scroll', () => {
+  // This checks if someone has scrolled beyond a certain point (100 pixels)
+  if (window.pageYOffset > 100) {
+    // If somoene has scrolled beyond the threshold, show the scroll-up button by setting its display property to block
+    scrollUpButton.style.display = 'block';
+  } else {
+    // If someone has not scrolled beyond the threshold, hide the scroll-up button by setting its display property to none
+    scrollUpButton.style.display = 'none';
+  }
+});

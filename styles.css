@@ -645,4 +645,31 @@ header button:hover {
     justify-content: end;
 }
   
+/* scroll up button */
+.scroll-up {
+  display: none; /* this hides the button on intital load */
+  position: fixed;
+  bottom: 2em;
+  right: 0.5em; 
+  font-size: 1.6em; 
+  color: #fff; 
+  background-color: #000; 
+  margin-right: 0.2rem;
+  margin-bottom: 3rem; /* this makes sure it doesnt touch the footer logo */
+  padding: 1.5vw 2vw;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-up i {
+  transform: none; 
+}
+
+.scroll-up:hover {
+  background-color: var(--detail-color);
+}
+
+
+
+
   
