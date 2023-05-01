@@ -175,7 +175,11 @@ nav {
         width: 25%;
       }
 
-      
+      /* scroll-up button */
+      .scroll-up {
+       
+       right: 3.5rem !important;
+      }
 }
 
 
@@ -621,8 +625,7 @@ header button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25rem;
-    margin-left: 2rem;
+    width: 20rem;
 
   }
 
