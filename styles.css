@@ -149,6 +149,11 @@ nav {
         display: block;
     }
 
+    /* header section */
+    .header button {
+      
+    }
+
 /* the packages */
       .package-group {
         flex-direction: row;
@@ -223,7 +228,7 @@ header button {
     
 }
 
-header button a {
+header a {
     color: var(--secondary-color);
     text-decoration: none;
     font-family: var(--heading-font);
@@ -585,6 +590,7 @@ header button:hover {
     text-align: center; /* Center the text horizontally */
     font-size: 1.25rem;
     margin-left: 5.5rem; /* helps center it individually */
+    color: var(--primary-color);
     
   }
 
