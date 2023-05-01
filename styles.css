@@ -214,9 +214,9 @@ header button:hover {
     color: var(--primary-color);
 }
 
-header button a:hover {
+/* header button a:hover {
     color: var(--primary-color);
-}
+} */
 
 
 /* EQUIPMENT SECTION */
