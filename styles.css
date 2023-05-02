@@ -190,6 +190,11 @@ nav {
        
        right: 1.5rem !important;
       }
+
+      /* footer */
+      .footer p {
+        font-size: 0.5rem;
+    }
 }
 
 
