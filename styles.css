@@ -222,6 +222,10 @@ header img {
     margin-bottom: 3rem; /* adds space between the paragraph & the button */
 }
 
+.header-content a {
+  color: var(--secondary-color);
+}
+
 header button {
     background-color: var(--primary-color);
     padding: 1rem 2rem;
