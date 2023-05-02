@@ -46,6 +46,4 @@ Maintenance and Updates: After deploying the website, I continued to monitor it 
 
 
 ## Under Development:
-- Optimizing the hambuger menu to adapt on smaller devices (more of a styling addition)
-- An arrow button that navigates back to the top of the screen
-- Changing the packages layout to stack on top of each other in mobile view
+- removing the blue text for the see packages button and the phone number in mobile view
