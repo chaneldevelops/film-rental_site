@@ -131,6 +131,11 @@ nav {
 
 /* Responsive nav */
 @media screen and (max-width: 767px) {
+  /* body */
+    body {
+      overflow-x: hidden; /* this should stop the left and right scrolling on mobile */
+    }
+
     /* nav section */
     .logo {
         width: 50%;
