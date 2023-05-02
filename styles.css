@@ -176,7 +176,7 @@ nav {
       }
 
       /* Take away the blue hyperlink in mobile view and make it non-clickable */
-      .contact-info {
+      .contact-details p {
         pointer-events: none;
       }
       
