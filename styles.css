@@ -177,8 +177,7 @@ nav {
 
       /* Take away the blue hyperlink in mobile view and make it non-clickable */
       .contact-info {
-        color: inherit;
-        text-decoration: none;
+        pointer-events: none;
       }
       
       
