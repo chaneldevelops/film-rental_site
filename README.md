@@ -1,4 +1,4 @@
-# Scene Setters Film Rental Equipment Website
+# Scene Setters Film Rental Equipment Website 🎞️
 
 This is a website for Scene Setters, a film rental equipment company. The website is designed to showcase the company's services and packages, as well as provide information about the company and a contact form for customers to get in touch.
 
